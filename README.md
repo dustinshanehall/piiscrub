@@ -1,5 +1,7 @@
 # PII Scrub
 
+[![tests](https://github.com/dustinshanehall/piiscrub/actions/workflows/tests.yml/badge.svg)](https://github.com/dustinshanehall/piiscrub/actions/workflows/tests.yml)
+
 Finds personal information in a document and replaces it, so the text is safe to
 paste into an LLM. Runs entirely on your own machine — nothing is uploaded.
 
@@ -62,6 +64,8 @@ There is a headless mode too:
 ```bash
 .venv/bin/python -m pytest tests/
 ```
+
+The same tests run on GitHub Actions for every push (`.github/workflows/tests.yml`).
 
 ## Building an executable
 

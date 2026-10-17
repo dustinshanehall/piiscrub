@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.3 — 2026-10-17
+
+Continuous integration. No behaviour changes.
+
+- Tests now run on GitHub Actions for every push and pull request, with a
+  status badge at the top of the README.
+
 ## 0.3.2 — 2026-09-12
 
 Licensing and documentation. No behaviour changes.

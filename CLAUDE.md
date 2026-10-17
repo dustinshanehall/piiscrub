@@ -1,6 +1,6 @@
 # PII Scrub — project notes
 
-**Version 0.3.2.** Python 3.14 + CustomTkinter desktop app, packaged with PyInstaller.
+**Version 0.3.3.** Python 3.14 + CustomTkinter desktop app, packaged with PyInstaller.
 
 Strips PII out of a document and writes redacted **text**, for safely pasting
 into an LLM. Not a PDF redactor — see README for the distinction.
@@ -110,3 +110,8 @@ disabled until a scan produces findings.
 
 **2026-09-12 (licensing)** — Added Apache-2.0, moved the README disclaimer up,
 and added a line to the save dialog.
+
+**2026-10-17 (0.3.3)** — Added GitHub Actions CI (`.github/workflows/tests.yml`) and a
+README badge. CI installs only presidio-analyzer + pypdf + en_core_web_lg (no GUI, no
+PyInstaller). Verified first in a clean venv: 17 tests, 2.1s. **CI is an alarm, not a gate:**
+there is no branch protection, and pushes go through the 8:15pm queue straight to main.
